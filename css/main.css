@@ -1,0 +1,187 @@
+/*
+ *
+ * This stylesheet is used only when the minimum width of the browser is 550 pixels
+ *
+ */
+
+body {
+    font-family: Roboto, serif;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ *
+ * Common
+ *
+ */
+
+.box {
+    box-shadow: 0 2px 5px rgba(47, 79, 79, 0.41);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+/*
+ *
+ * Header
+ *
+ */
+
+.header {
+    min-height: 56px;
+    transition: min-height 0.3s;
+}
+
+.header_inner {
+    display: flex;
+}
+
+.logo_wrapper {
+    width: 150px;
+}
+
+.header_logo {
+    width: 100%;
+    height: 100%;
+}
+
+.header_user {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.header_title {
+    margin: 0;
+    text-align: right;
+    font-weight: 200;
+    font-size: 3em;
+}
+
+.header_subtitle {
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: right;
+    font-weight: 200;
+    font-size: 1.25em;
+}
+
+/*
+ *
+ * Main
+ *
+ */
+
+.main_image_wrapper {
+    height: 300px;
+    overflow: hidden;
+}
+
+.main_image {
+    height: 100%;
+}
+
+/*
+ *
+ * Content
+ *
+ */
+
+.featured_work_title {
+    font-weight: 400;
+    font-size: 1.5em;
+    color: #2d3c49;
+    margin: 0;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    margin-bottom: 1.5em;
+}
+
+.list_item {
+    width: 48%;
+    padding: 1%;
+}
+
+.list_item_wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 2%;
+}
+
+.list_item_image {
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.list_item_wrapper:hover .overlay {
+    height: 98%;
+}
+
+.project_description {
+    color: white;
+    font-size: 1.5vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.project_title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5em;
+    color: #2d3c49;
+}
+
+.button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    display: block;
+    min-width: 48px;
+    min-height: 48px;
+    width: 80%;
+    background: #02b3e4;
+    text-align: center;
+    line-height: 48px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: #17c8d8;
+}
+
+.button:active {
+    background: #02a0c0;
+}
