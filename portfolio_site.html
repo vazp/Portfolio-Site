@@ -1,64 +1,83 @@
 <!doctype html>
 <html lang="en">
 
+	<!-- Font Awesome by Dave Gandy - http://fontawesome.io -->
+
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta charset="UTF-8">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" media="screen and (max-width: 549px)" href="css/main_small.css">
 		<link rel="stylesheet" media="screen and (min-width: 550px)" href="css/main.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<title>Portfolio Site</title>
 	</head>
 
 	<body>
 
 		<header class="header box">
-			<div class="header_inner">
-				<div class="logo_wrapper">
-					<img class="header_logo" src="images/udacity_logo.png" alt="Udacity logo">
+			<div class="header-inner">
+				<div class="logo-wrapper">
+					<img class="header-logo" src="images/udacity_logo.png" alt="Udacity logo">
 				</div>
-				<div class="header_user">
-					<h1 class="header_title">Miguel Vazquez</h1>
-					<h4 class="header_subtitle">Android and Web Developer</h4>
+				<div class="header-user">
+					<h1 class="header-title">Miguel Vazquez</h1>
+					<h4 class="header-subtitle">Android and Web Developer</h4>
 				</div>
 			</div>
 		</header>
 
 		<main>
 
-			<div class="main_image_wrapper box">
-				<img class="main_image" src="images/main_image.png" alt="Code snippet image">
+			<div class="main-image-wrapper box">
+				<img class="main-image" src="images/main_image_1700w.png"
+					 sizes="(max-width: 549px) 50vw, (min-width: 550px) 100vw"
+					 srcset="images/main_image_1700w.png 1700w, images/main_image_850w.png 850w"
+					 alt="Code snippet image">
 			</div>
 
 			<section class="featured_work">
-				<h3 class="featured_work_title box">Featured Work</h3>
+				<h3 class="featured-work-title box">Featured Work</h3>
 				<!-- TODO: add more entries as the nanodegree continues -->
 				<ul class="list">
-					<li class="list_item box">
-						<div class="list_item_wrapper">
-							<img class="list_item_image" src="images/project_1.png" alt="Popular Movies App screenshot">
+					<li class="list-item box">
+						<div class="list-item-wrapper">
+							<img class="list-item-image" src="images/project_1.png" alt="Popular Movies App screenshot">
 							<div class="overlay">
-								<p class="project_description">Android app that fetches the synopsis, trailers and reviews of the current most popular movies</p>
+								<p class="project-description">Android app that fetches the synopsis, trailers and
+									reviews of the current most popular movies</p>
 							</div>
 						</div>
-						<h2 class="project_title">Popular Movies App</h2>
-						<a class="button" href="https://github.com/vazp/PopularMovies_Stage2">Github</a>
+						<h2 class="project-title">Popular Movies App</h2>
+						<a class="button" href="https://github.com/vazp/PopularMovies_Stage2" target="_blank">Github</a>
 					</li>
-					<li class="list_item box">
-						<div class="list_item_wrapper">
-							<img class="list_item_image" src="images/project_2.png"
+					<li class="list-item box">
+						<div class="list-item-wrapper">
+							<img class="list-item-image" src="images/project_2.png"
 								 alt="Anime Trailer Website screenshot">
 							<div class="overlay">
-								<p class="project_description">Python script that generates a web page that shows the trailer for six anime series</p>
+								<p class="project-description">Python script that generates a web page that shows the
+									trailer for six anime series</p>
 							</div>
 						</div>
-						<h2 class="project_title">Anime Trailer Website</h2>
-						<a class="button" href="https://github.com/vazp/Anime-Trailer-Website">Github</a>
+						<h2 class="project-title">Anime Trailer Website</h2>
+						<a class="button" href="https://github.com/vazp/Anime-Trailer-Website"
+						   target="_blank">Github</a>
 					</li>
 				</ul>
 			</section>
 
 		</main>
+
+		<footer class="footer box">
+			<ul class="social-media-list">
+				<li><a href="https://github.com/vazp" target="_blank"><span class="fa fa-github fa-lg"></span></a></li>
+				<li><a href="https://www.linkedin.com/in/miguel-vázquez-ponce-b1b1853b" target="_blank"><span
+						class="fa fa-linkedin-square fa-lg"></span></a></li>
+				<li><a href="https://stackoverflow.com/users/3230329/vazp" target="_blank"><span
+						class="fa fa-stack-overflow fa-lg"></span></a></li>
+			</ul>
+		</footer>
 
 	</body>
 
